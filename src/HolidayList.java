@@ -9,12 +9,12 @@ public class HolidayList {
         return list;
     }
 
-    public boolean isHoliday(String date) {
+    public String isHoliday(String date) {
         for (int i = 0; i < list.length; i++) {
             if (date.equals(list[i].getDate())) {
-                return true;
+                return list[i].getName();
             }
         }
-        return false;
+        return "The given date is not a holiday!";
     }
 }

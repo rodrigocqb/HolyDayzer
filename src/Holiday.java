@@ -1,4 +1,4 @@
-public class Holiday {
+public class Holiday implements HolidayInterface {
     private String date;
     private String name;
 
